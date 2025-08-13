@@ -157,6 +157,80 @@ body {
     box-shadow: var(--shadow-medium);
 }
 
+/* ===== THEME TOOLBAR (top-right) ===== */
+.theme-toolbar {
+    position: fixed;
+    top: 80px; /* keep clear of navbar */
+    right: 16px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    z-index: 5000;
+}
+
+.theme-toolbar .theme-btn {
+    width: 44px;
+    height: 44px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 999px;
+    border: 2px solid var(--primary-blue);
+    background: var(--bg-card);
+    color: var(--primary-blue);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.35), 0 0 0 3px rgba(0,212,255,0.15);
+    transition: transform var(--transition-fast), background var(--transition-fast), color var(--transition-fast), box-shadow var(--transition-fast);
+}
+
+.theme-toolbar .theme-btn:hover {
+    transform: translateY(-2px);
+    background: var(--primary-blue);
+    color: var(--bg-primary);
+}
+
+.theme-toolbar .color-swatches {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 6px 10px;
+    background: rgba(0,0,0,0.5);
+    backdrop-filter: blur(8px);
+    border: 1px solid #ffffff22;
+    border-radius: 999px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.35);
+}
+
+.theme-toolbar .swatch {
+    width: 20px;
+    height: 20px;
+    border-radius: 4px;
+    border: 2px solid #ffffff22;
+    background: var(--swatch);
+    cursor: pointer;
+    transition: transform var(--transition-fast), box-shadow var(--transition-fast);
+}
+
+.theme-toolbar .swatch:hover,
+.theme-toolbar .swatch.active {
+    transform: scale(1.1);
+    box-shadow: 0 0 0 3px #ffffff22, 0 0 12px var(--swatch);
+}
+
+.theme-toolbar .color-picker {
+    appearance: none;
+    -webkit-appearance: none;
+    border: none;
+    width: 28px;
+    height: 28px;
+    border-radius: 6px;
+    padding: 0;
+    background: transparent;
+    cursor: pointer;
+}
+
+.theme-toolbar .color-picker::-webkit-color-swatch-wrapper { padding: 0; }
+.theme-toolbar .color-picker::-webkit-color-swatch { border: 2px solid #ffffff22; border-radius: 6px; }
+
 /* ===== NAVIGATION ===== */
 .navbar {
     background: rgba(10, 10, 10, 0.95);

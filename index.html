@@ -1,25 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Yanaphat Inkham - Tech Portfolio</title>
-    
+
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    
+
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    
+
     <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    
+    <link
+        href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
     <!-- AOS Animation -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    
+
     <!-- Custom CSS -->
-    
-    
+
+
     <!-- Inline CSS for immediate display -->
     <style>
         /* Basic styles to ensure content is visible */
@@ -31,21 +34,21 @@
             overflow-x: hidden;
             transition: background-color 0.5s ease, color 0.5s ease;
         }
-        
+
         .navbar {
             background: rgba(10, 10, 10, 0.95);
             backdrop-filter: blur(20px);
             border-bottom: 1px solid #333333;
             padding: 1rem 0;
         }
-        
+
         .navbar-brand {
             text-decoration: none;
             display: flex;
             flex-direction: column;
             align-items: center;
         }
-        
+
         .brand-text {
             font-family: 'Orbitron', monospace;
             font-size: 1.5rem;
@@ -54,7 +57,7 @@
             text-shadow: 0 0 20px #00d4ff;
             letter-spacing: 3px;
         }
-        
+
         .brand-subtitle {
             font-family: 'Rajdhani', sans-serif;
             font-size: 0.8rem;
@@ -62,18 +65,18 @@
             letter-spacing: 2px;
             margin-top: -5px;
         }
-        
+
         .navbar-nav .nav-link {
             color: #b3b3b3;
             font-weight: 500;
             margin: 0 1rem;
             transition: all 0.3s ease;
         }
-        
+
         .navbar-nav .nav-link:hover {
             color: #00d4ff;
         }
-        
+
         .hero-section {
             min-height: 100vh;
             display: flex;
@@ -82,7 +85,7 @@
             overflow: hidden;
             padding: 2rem 0;
         }
-        
+
         .hero-title {
             font-family: 'Orbitron', monospace;
             font-size: 3.5rem;
@@ -90,7 +93,7 @@
             margin-bottom: 1.5rem;
             line-height: 1.2;
         }
-        
+
         .highlight {
             background: linear-gradient(135deg, #00d4ff 0%, #0066ff 100%);
             -webkit-background-clip: text;
@@ -99,190 +102,190 @@
             position: relative;
             animation: text-glow 2s ease-in-out infinite alternate;
         }
-        
+
         /* Light Theme Styles */
         [data-theme="light"] body {
             background: #ffffff;
             color: #1a1a1a;
         }
-        
+
         [data-theme="light"] .navbar {
             background: rgba(255, 255, 255, 0.95);
             border-bottom: 1px solid #dee2e6;
         }
-        
+
         [data-theme="light"] .brand-text {
             color: #0066ff;
             text-shadow: 0 0 20px #0066ff;
         }
-        
+
         [data-theme="light"] .brand-subtitle {
             color: #4a4a4a;
         }
-        
+
         [data-theme="light"] .navbar-nav .nav-link {
             color: #4a4a4a;
         }
-        
+
         [data-theme="light"] .navbar-nav .nav-link:hover {
             color: #0066ff;
         }
-        
+
         [data-theme="light"] .hero-title {
             color: #1a1a1a;
         }
-        
+
         [data-theme="light"] .hero-subtitle {
             color: #4a4a4a;
         }
-        
+
         [data-theme="light"] .section-title {
             color: #0066ff;
         }
-        
+
         [data-theme="light"] .title-line {
             background: linear-gradient(135deg, #0066ff 0%, #00d4ff 100%);
         }
-        
+
         [data-theme="light"] .about-section {
             background: #f8f9fa;
         }
-        
+
         [data-theme="light"] .skills-section {
             background: #e9ecef;
         }
-        
+
         [data-theme="light"] .portfolio-section {
             background: #f8f9fa;
         }
-        
+
         [data-theme="light"] .contact-section {
             background: #e9ecef;
         }
-        
+
         [data-theme="light"] .portfolio-item {
             background: #ffffff;
             border: 1px solid #dee2e6;
         }
-        
+
         [data-theme="light"] .contact-form {
             background: #ffffff;
             border: 1px solid #dee2e6;
         }
-        
+
         [data-theme="light"] .form-control {
             background: #f8f9fa;
             border: 2px solid #dee2e6;
             color: #1a1a1a;
         }
-        
+
         [data-theme="light"] .form-control:focus {
             background: #f8f9fa;
             border-color: #0066ff;
             color: #1a1a1a;
         }
-        
+
         [data-theme="light"] .timeline-content {
             background: rgba(255, 255, 255, 0.9);
         }
-        
+
         [data-theme="light"] .timeline-content h5 {
             color: #0066ff;
         }
-        
+
         [data-theme="light"] .timeline-content p {
             color: #4a4a4a;
         }
-        
+
         [data-theme="light"] .tech-badge {
             background: rgba(0, 102, 255, 0.1);
             color: #0066ff;
             border: 1px solid #0066ff;
         }
-        
+
         [data-theme="light"] .tech-badge:hover {
             background: #0066ff;
             color: #ffffff;
         }
-        
+
         [data-theme="light"] .floating-card {
             background: #ffffff;
             border: 2px solid #dee2e6;
         }
-        
+
         [data-theme="light"] .hero-avatar {
             border-color: #0066ff;
         }
-        
+
         [data-theme="light"] .tech-icons i {
             color: #0066ff;
         }
-        
+
         [data-theme="light"] .filter-btn {
             border: 2px solid #dee2e6;
             color: #4a4a4a;
         }
-        
+
         [data-theme="light"] .filter-btn:hover,
         [data-theme="light"] .filter-btn.active {
             background: #0066ff;
             border-color: #0066ff;
             color: #ffffff;
         }
-        
+
         [data-theme="light"] .btn-outline-primary {
             border: 2px solid #0066ff;
             color: #0066ff;
         }
-        
+
         [data-theme="light"] .btn-outline-primary:hover {
             background: #0066ff;
             color: #ffffff;
         }
-        
+
         [data-theme="light"] .stat-number {
             color: #0066ff;
         }
-        
+
         [data-theme="light"] .stat-label {
             color: #4a4a4a;
         }
-        
+
         [data-theme="light"] .hero-badge {
             background: linear-gradient(135deg, #0066ff 0%, #00d4ff 100%);
             color: #ffffff;
         }
-        
+
         [data-theme="light"] .footer {
             background: #ffffff;
             border-top: 1px solid #dee2e6;
         }
-        
+
         [data-theme="light"] .footer-text {
             color: #4a4a4a;
         }
-        
+
         [data-theme="light"] .back-to-top {
             background: linear-gradient(135deg, #0066ff 0%, #00d4ff 100%);
             color: #ffffff;
         }
-        
+
         /* Light Theme Mega Titles */
         [data-theme="light"] .section-bg-text {
             color: rgba(0, 102, 255, 0.1);
         }
-        
+
         [data-theme="light"] .title-char:hover {
             color: #0066ff;
             text-shadow: 0 0 30px #0066ff;
         }
-        
+
         [data-theme="light"] .floating-icon {
             color: rgba(0, 102, 255, 0.6);
         }
-        
 
-        
+
+
         /* Typing Text Effect */
         .typing-text {
             color: #ffffff;
@@ -291,13 +294,13 @@
             white-space: nowrap;
             overflow: hidden;
         }
-        
+
         /* Glitch Text Effect */
         .glitch-text {
             position: relative;
             animation: glitch 3s infinite;
         }
-        
+
         .glitch-text::before,
         .glitch-text::after {
             content: attr(data-text);
@@ -307,76 +310,141 @@
             width: 100%;
             height: 100%;
         }
-        
+
         .glitch-text::before {
             animation: glitch-1 2s infinite;
             color: #ff0000;
             z-index: -1;
         }
-        
+
         .glitch-text::after {
             animation: glitch-2 2s infinite;
             color: #00ff00;
             z-index: -2;
         }
-        
+
         /* Text Glow Animation */
         @keyframes text-glow {
-            0% { 
+            0% {
                 text-shadow: 0 0 20px #00d4ff, 0 0 30px #00d4ff, 0 0 40px #00d4ff;
                 filter: brightness(1);
             }
-            100% { 
+
+            100% {
                 text-shadow: 0 0 30px #00d4ff, 0 0 40px #00d4ff, 0 0 50px #00d4ff;
                 filter: brightness(1.2);
             }
         }
-        
 
-        
+
+
         /* Typing Animation */
         @keyframes typing {
-            0%, 90%, 100% { width: 0; }
-            30%, 60% { width: 100%; }
+
+            0%,
+            90%,
+            100% {
+                width: 0;
+            }
+
+            30%,
+            60% {
+                width: 100%;
+            }
         }
-        
+
         @keyframes blink {
-            from, to { border-color: transparent; }
-            50% { border-color: #00d4ff; }
+
+            from,
+            to {
+                border-color: transparent;
+            }
+
+            50% {
+                border-color: #00d4ff;
+            }
         }
-        
+
         /* Glitch Animations */
         @keyframes glitch {
-            0%, 100% { transform: translate(0); }
-            20% { transform: translate(-2px, 2px); }
-            40% { transform: translate(-2px, -2px); }
-            60% { transform: translate(2px, 2px); }
-            80% { transform: translate(2px, -2px); }
+
+            0%,
+            100% {
+                transform: translate(0);
+            }
+
+            20% {
+                transform: translate(-2px, 2px);
+            }
+
+            40% {
+                transform: translate(-2px, -2px);
+            }
+
+            60% {
+                transform: translate(2px, 2px);
+            }
+
+            80% {
+                transform: translate(2px, -2px);
+            }
         }
-        
+
         @keyframes glitch-1 {
-            0%, 100% { transform: translate(0); }
-            20% { transform: translate(-3px, 3px); }
-            40% { transform: translate(-3px, -3px); }
-            60% { transform: translate(3px, 3px); }
-            80% { transform: translate(3px, -3px); }
+
+            0%,
+            100% {
+                transform: translate(0);
+            }
+
+            20% {
+                transform: translate(-3px, 3px);
+            }
+
+            40% {
+                transform: translate(-3px, -3px);
+            }
+
+            60% {
+                transform: translate(3px, 3px);
+            }
+
+            80% {
+                transform: translate(3px, -3px);
+            }
         }
-        
+
         @keyframes glitch-2 {
-            0%, 100% { transform: translate(0); }
-            20% { transform: translate(3px, -3px); }
-            40% { transform: translate(3px, 3px); }
-            60% { transform: translate(-3px, -3px); }
-            80% { transform: translate(-3px, 3px); }
+
+            0%,
+            100% {
+                transform: translate(0);
+            }
+
+            20% {
+                transform: translate(3px, -3px);
+            }
+
+            40% {
+                transform: translate(3px, 3px);
+            }
+
+            60% {
+                transform: translate(-3px, -3px);
+            }
+
+            80% {
+                transform: translate(-3px, 3px);
+            }
         }
-        
+
         .hero-subtitle {
             font-size: 1.3rem;
             color: #b3b3b3;
             margin-bottom: 2.5rem;
             line-height: 1.6;
         }
-        
+
         .btn {
             border-radius: 50px;
             padding: 0.8rem 2rem;
@@ -385,24 +453,24 @@
             letter-spacing: 1px;
             transition: all 0.3s ease;
         }
-        
+
         .btn-primary {
             background: linear-gradient(135deg, #00d4ff 0%, #0066ff 100%);
             border: none;
             color: #0a0a0a;
         }
-        
+
         .btn-outline-primary {
             background: transparent;
             border: 2px solid #00d4ff;
             color: #00d4ff;
         }
-        
+
         .btn-outline-primary:hover {
             background: #00d4ff;
             color: #0a0a0a;
         }
-        
+
         .section-title {
             font-family: 'Orbitron', monospace;
             font-size: 3rem;
@@ -411,7 +479,7 @@
             text-align: center;
             color: #00d4ff;
         }
-        
+
         .title-line {
             width: 100px;
             height: 4px;
@@ -419,13 +487,13 @@
             margin: 0 auto 3rem;
             border-radius: 2px;
         }
-        
+
         /* Mega Title Styles */
         .section-header-wrapper {
             position: relative;
             margin-bottom: 4rem;
         }
-        
+
         .section-bg-text {
             position: absolute;
             top: -50px;
@@ -440,13 +508,13 @@
             user-select: none;
             animation: bg-text-float 6s ease-in-out infinite;
         }
-        
+
         .mega-title {
             position: relative;
             display: inline-block;
             margin-bottom: 2rem;
         }
-        
+
         .title-char {
             display: inline-block;
             position: relative;
@@ -454,18 +522,18 @@
             cursor: pointer;
             transition: all 0.3s ease;
         }
-        
+
         .title-char:hover {
             transform: translateY(-10px) scale(1.2);
             color: #00ffff;
             text-shadow: 0 0 30px #00ffff;
         }
-        
+
         .title-space {
             display: inline-block;
             width: 20px;
         }
-        
+
         .mega-line {
             width: 200px;
             height: 6px;
@@ -475,7 +543,7 @@
             position: relative;
             overflow: hidden;
         }
-        
+
         .mega-line::before {
             content: '';
             position: absolute;
@@ -486,7 +554,7 @@
             background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.8), transparent);
             animation: mega-line-shine 3s ease-in-out infinite;
         }
-        
+
         .floating-elements {
             position: absolute;
             top: 0;
@@ -495,87 +563,111 @@
             height: 100%;
             pointer-events: none;
         }
-        
+
         .floating-icon {
             position: absolute;
             font-size: 2rem;
             color: rgba(0, 212, 255, 0.6);
             animation: floating-parallax 8s ease-in-out infinite;
         }
-        
+
         .floating-icon:nth-child(1) {
             top: 20%;
             left: 10%;
             animation-delay: 0s;
         }
-        
+
         .floating-icon:nth-child(2) {
             top: 60%;
             right: 15%;
             animation-delay: 2s;
         }
-        
+
         .floating-icon:nth-child(3) {
             top: 40%;
             left: 80%;
             animation-delay: 4s;
         }
-        
+
         /* Mega Title Animations */
         @keyframes char-float {
-            0%, 100% { transform: translateY(0px); }
-            50% { transform: translateY(-5px); }
+
+            0%,
+            100% {
+                transform: translateY(0px);
+            }
+
+            50% {
+                transform: translateY(-5px);
+            }
         }
-        
+
         @keyframes bg-text-float {
-            0%, 100% { transform: translateX(-50%) translateY(0px); }
-            50% { transform: translateX(-50%) translateY(-10px); }
+
+            0%,
+            100% {
+                transform: translateX(-50%) translateY(0px);
+            }
+
+            50% {
+                transform: translateX(-50%) translateY(-10px);
+            }
         }
-        
+
         @keyframes mega-line-shine {
-            0% { left: -100%; }
-            100% { left: 100%; }
+            0% {
+                left: -100%;
+            }
+
+            100% {
+                left: 100%;
+            }
         }
-        
+
         @keyframes floating-parallax {
-            0%, 100% { 
+
+            0%,
+            100% {
                 transform: translateY(0px) rotate(0deg) scale(1);
                 opacity: 0.6;
             }
-            25% { 
+
+            25% {
                 transform: translateY(-20px) rotate(90deg) scale(1.1);
                 opacity: 0.8;
             }
-            50% { 
+
+            50% {
                 transform: translateY(-10px) rotate(180deg) scale(0.9);
                 opacity: 0.6;
             }
-            75% { 
+
+            75% {
                 transform: translateY(-30px) rotate(270deg) scale(1.2);
                 opacity: 0.9;
             }
         }
-        
+
         section {
             padding: 5rem 0;
         }
-        
+
         .about-section {
             background: #111111;
         }
-        
+
         .skills-section {
             background: #1a1a1a;
         }
-        
+
         .portfolio-section {
             background: #111111;
         }
-        
+
         .contact-section {
             background: #1a1a1a;
         }
-        
+
         .portfolio-item {
             background: #1e1e1e;
             border-radius: 20px;
@@ -585,32 +677,32 @@
             height: 100%;
             margin-bottom: 2rem;
         }
-        
+
         .portfolio-item:hover {
             transform: translateY(-10px);
             border-color: #00d4ff;
         }
-        
+
         .portfolio-image img {
             width: 100%;
             height: 250px;
             object-fit: cover;
         }
-        
+
         .portfolio-content {
             padding: 1.5rem;
         }
-        
+
         .portfolio-content h4 {
             color: #ffffff;
             margin-bottom: 1rem;
         }
-        
+
         .portfolio-content p {
             color: #b3b3b3;
             margin-bottom: 1.5rem;
         }
-        
+
         .portfolio-tags span {
             background: #111111;
             color: #00d4ff;
@@ -622,14 +714,14 @@
             margin-bottom: 0.5rem;
             display: inline-block;
         }
-        
+
         .theme-toggle {
             position: fixed;
             top: 20px;
             right: 20px;
             z-index: 1000;
         }
-        
+
         .theme-toggle button {
             background: #1e1e1e;
             border: 2px solid #00d4ff;
@@ -640,13 +732,13 @@
             cursor: pointer;
             transition: all 0.3s ease;
         }
-        
+
         .theme-toggle button:hover {
             background: #00d4ff;
             color: #0a0a0a;
             transform: scale(1.1);
         }
-        
+
         .hero-avatar {
             width: 200px;
             height: 200px;
@@ -654,7 +746,7 @@
             border: 4px solid #00d4ff;
             box-shadow: 0 8px 40px rgba(0, 212, 255, 0.2);
         }
-        
+
         .floating-card {
             background: #1e1e1e;
             border: 2px solid #333333;
@@ -663,17 +755,17 @@
             box-shadow: 0 8px 40px rgba(0, 212, 255, 0.2);
             position: relative;
         }
-        
+
         .hero-stats {
             display: flex;
             gap: 2rem;
             margin-top: 2rem;
         }
-        
+
         .stat-item {
             text-align: center;
         }
-        
+
         .stat-number {
             display: block;
             font-size: 2rem;
@@ -681,14 +773,14 @@
             color: #00d4ff;
             font-family: 'Orbitron', monospace;
         }
-        
+
         .stat-label {
             font-size: 0.9rem;
             color: #b3b3b3;
             text-transform: uppercase;
             letter-spacing: 1px;
         }
-        
+
         .hero-badge {
             display: inline-flex;
             align-items: center;
@@ -700,12 +792,12 @@
             font-weight: 600;
             margin-bottom: 2rem;
         }
-        
+
         .hero-badge i {
             margin-right: 0.5rem;
             font-size: 1.1rem;
         }
-        
+
         .tech-icons {
             position: absolute;
             top: -20px;
@@ -713,12 +805,12 @@
             display: flex;
             gap: 1rem;
         }
-        
+
         .tech-icons i {
             font-size: 2rem;
             color: #00d4ff;
         }
-        
+
         /* Education Timeline Styles */
         .education-timeline {
             margin-top: 3rem;
@@ -728,7 +820,7 @@
             border: 1px solid rgba(0, 212, 255, 0.3);
             backdrop-filter: blur(10px);
         }
-        
+
         .timeline-title {
             color: #00d4ff;
             font-size: 1.5rem;
@@ -736,16 +828,16 @@
             text-align: center;
             text-shadow: 0 0 20px #00d4ff;
         }
-        
+
         .timeline-title i {
             margin-right: 0.5rem;
             animation: rocket-bounce 2s ease-in-out infinite;
         }
-        
+
         .timeline-container {
             position: relative;
         }
-        
+
         .timeline-container::before {
             content: '';
             position: absolute;
@@ -756,13 +848,13 @@
             background: linear-gradient(180deg, #00d4ff, #0066ff, #00d4ff);
             animation: timeline-glow 3s ease-in-out infinite;
         }
-        
+
         .timeline-item {
             position: relative;
             margin-bottom: 2rem;
             padding-left: 80px;
         }
-        
+
         .timeline-marker {
             position: absolute;
             left: 20px;
@@ -779,7 +871,7 @@
             box-shadow: 0 0 20px #00d4ff;
             animation: marker-pulse 2s ease-in-out infinite;
         }
-        
+
         .timeline-content {
             background: rgba(30, 30, 30, 0.9);
             padding: 1.5rem;
@@ -787,20 +879,20 @@
             border-left: 4px solid #00d4ff;
             transition: all 0.3s ease;
         }
-        
+
         .timeline-content:hover {
             transform: translateX(10px);
             box-shadow: 0 8px 40px rgba(0, 212, 255, 0.3);
             border-left-color: #00ffff;
         }
-        
+
         .timeline-content h5 {
             color: #00d4ff;
             font-size: 1.2rem;
             margin-bottom: 0.5rem;
             text-shadow: 0 0 10px #00d4ff;
         }
-        
+
         .timeline-period {
             color: #00ffff;
             font-size: 0.9rem;
@@ -808,19 +900,19 @@
             margin-bottom: 1rem;
             display: block;
         }
-        
+
         .timeline-content p {
             color: #b3b3b3;
             margin-bottom: 1rem;
             line-height: 1.6;
         }
-        
+
         .timeline-tech {
             display: flex;
             flex-wrap: wrap;
             gap: 0.5rem;
         }
-        
+
         .tech-badge {
             background: rgba(0, 212, 255, 0.1);
             color: #00d4ff;
@@ -830,30 +922,51 @@
             border: 1px solid #00d4ff;
             transition: all 0.3s ease;
         }
-        
+
         .tech-badge:hover {
             background: #00d4ff;
             color: #0a0a0a;
             transform: translateY(-2px);
             box-shadow: 0 4px 20px rgba(0, 212, 255, 0.5);
         }
-        
+
         /* Timeline Animations */
         @keyframes timeline-glow {
-            0%, 100% { box-shadow: 0 0 10px #00d4ff; }
-            50% { box-shadow: 0 0 30px #00d4ff, 0 0 50px #00d4ff; }
+
+            0%,
+            100% {
+                box-shadow: 0 0 10px #00d4ff;
+            }
+
+            50% {
+                box-shadow: 0 0 30px #00d4ff, 0 0 50px #00d4ff;
+            }
         }
-        
+
         @keyframes marker-pulse {
-            0%, 100% { transform: scale(1); }
-            50% { transform: scale(1.2); }
+
+            0%,
+            100% {
+                transform: scale(1);
+            }
+
+            50% {
+                transform: scale(1.2);
+            }
         }
-        
+
         @keyframes rocket-bounce {
-            0%, 100% { transform: translateY(0px); }
-            50% { transform: translateY(-5px); }
+
+            0%,
+            100% {
+                transform: translateY(0px);
+            }
+
+            50% {
+                transform: translateY(-5px);
+            }
         }
-        
+
         /* Matrix Background */
         .matrix-bg {
             position: absolute;
@@ -861,13 +974,13 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background: linear-gradient(90deg, 
-                transparent 0%, 
-                rgba(0, 212, 255, 0.1) 50%, 
-                transparent 100%);
+            background: linear-gradient(90deg,
+                    transparent 0%,
+                    rgba(0, 212, 255, 0.1) 50%,
+                    transparent 100%);
             animation: matrix-scan 8s linear infinite;
         }
-        
+
         /* Circuit Lines */
         .circuit-lines {
             position: absolute;
@@ -875,13 +988,13 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background-image: 
+            background-image:
                 radial-gradient(circle at 20% 80%, rgba(0, 212, 255, 0.3) 0%, transparent 50%),
                 radial-gradient(circle at 80% 20%, rgba(0, 102, 255, 0.3) 0%, transparent 50%),
                 radial-gradient(circle at 40% 40%, rgba(0, 255, 255, 0.2) 0%, transparent 50%);
             animation: circuit-pulse 6s ease-in-out infinite;
         }
-        
+
         /* Floating Particles */
         .floating-particles {
             position: absolute;
@@ -891,7 +1004,7 @@
             height: 100%;
             overflow: hidden;
         }
-        
+
         .floating-particles::before,
         .floating-particles::after {
             content: '';
@@ -900,25 +1013,25 @@
             height: 4px;
             background: #00d4ff;
             border-radius: 50%;
-            box-shadow: 
+            box-shadow:
                 0 0 20px #00d4ff,
                 0 0 40px #00d4ff,
                 0 0 60px #00d4ff;
             animation: float-particle 10s linear infinite;
         }
-        
+
         .floating-particles::before {
             top: 20%;
             left: 10%;
             animation-delay: 0s;
         }
-        
+
         .floating-particles::after {
             top: 60%;
             right: 20%;
             animation-delay: 5s;
         }
-        
+
         /* Tech Grid */
         .tech-grid {
             position: absolute;
@@ -926,13 +1039,13 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background-image: 
+            background-image:
                 linear-gradient(rgba(0, 212, 255, 0.1) 1px, transparent 1px),
                 linear-gradient(90deg, rgba(0, 212, 255, 0.1) 1px, transparent 1px);
             background-size: 50px 50px;
             animation: grid-move 20s linear infinite;
         }
-        
+
         /* Energy Waves */
         .energy-waves {
             position: absolute;
@@ -940,43 +1053,80 @@
             left: 0;
             width: 100%;
             height: 100px;
-            background: linear-gradient(0deg, 
-                rgba(0, 212, 255, 0.2) 0%, 
-                transparent 100%);
+            background: linear-gradient(0deg,
+                    rgba(0, 212, 255, 0.2) 0%,
+                    transparent 100%);
             animation: energy-wave 4s ease-in-out infinite;
         }
-        
+
         /* Matrix Scan Animation */
         @keyframes matrix-scan {
-            0% { transform: translateY(-100%); }
-            100% { transform: translateY(100vh); }
+            0% {
+                transform: translateY(-100%);
+            }
+
+            100% {
+                transform: translateY(100vh);
+            }
         }
-        
+
         /* Circuit Pulse Animation */
         @keyframes circuit-pulse {
-            0%, 100% { opacity: 0.3; }
-            50% { opacity: 0.8; }
+
+            0%,
+            100% {
+                opacity: 0.3;
+            }
+
+            50% {
+                opacity: 0.8;
+            }
         }
-        
+
         /* Floating Particle Animation */
         @keyframes float-particle {
-            0% { transform: translateY(0px) rotate(0deg); opacity: 1; }
-            50% { transform: translateY(-100px) rotate(180deg); opacity: 0.5; }
-            100% { transform: translateY(-200px) rotate(360deg); opacity: 0; }
+            0% {
+                transform: translateY(0px) rotate(0deg);
+                opacity: 1;
+            }
+
+            50% {
+                transform: translateY(-100px) rotate(180deg);
+                opacity: 0.5;
+            }
+
+            100% {
+                transform: translateY(-200px) rotate(360deg);
+                opacity: 0;
+            }
         }
-        
+
         /* Grid Move Animation */
         @keyframes grid-move {
-            0% { transform: translate(0, 0); }
-            100% { transform: translate(50px, 50px); }
+            0% {
+                transform: translate(0, 0);
+            }
+
+            100% {
+                transform: translate(50px, 50px);
+            }
         }
-        
+
         /* Energy Wave Animation */
         @keyframes energy-wave {
-            0%, 100% { transform: scaleY(1); opacity: 0.2; }
-            50% { transform: scaleY(1.5); opacity: 0.4; }
+
+            0%,
+            100% {
+                transform: scaleY(1);
+                opacity: 0.2;
+            }
+
+            50% {
+                transform: scaleY(1.5);
+                opacity: 0.4;
+            }
         }
-        
+
         .filter-btn {
             background: transparent;
             border: 2px solid #333333;
@@ -988,7 +1138,7 @@
             transition: all 0.3s ease;
             font-weight: 600;
         }
-        
+
         .filter-btn:hover,
         .filter-btn.active {
             background: #00d4ff;
@@ -996,19 +1146,19 @@
             color: #0a0a0a;
             transform: translateY(-2px);
         }
-        
+
         .portfolio-filters {
             margin-bottom: 3rem;
             text-align: center;
         }
-        
+
         .contact-form {
             background: #1e1e1e;
             padding: 2rem;
             border-radius: 20px;
             border: 1px solid #333333;
         }
-        
+
         .form-control {
             background: #111111;
             border: 2px solid #333333;
@@ -1017,34 +1167,34 @@
             padding: 1rem;
             transition: all 0.3s ease;
         }
-        
+
         .form-control:focus {
             background: #111111;
             border-color: #00d4ff;
             color: #ffffff;
             box-shadow: 0 0 0 0.2rem rgba(0, 212, 255, 0.25);
         }
-        
+
         .form-control::placeholder {
             color: #808080;
         }
-        
+
         .footer {
             background: #0a0a0a;
             border-top: 1px solid #333333;
             padding: 3rem 0 1rem;
         }
-        
+
         .footer-content {
             text-align: center;
         }
-        
+
         .footer-text {
             color: #b3b3b3;
             margin-bottom: 2rem;
             font-size: 1.1rem;
         }
-        
+
         .back-to-top {
             position: fixed;
             bottom: 30px;
@@ -1063,70 +1213,84 @@
             transition: all 0.3s ease;
             z-index: 1000;
         }
-        
+
         .back-to-top.show {
             display: flex;
         }
-        
+
         .back-to-top:hover {
             transform: translateY(-3px);
             box-shadow: 0 8px 40px rgba(0, 212, 255, 0.3);
         }
-        
+
         @media (max-width: 768px) {
             .hero-title {
                 font-size: 2.5rem;
             }
-            
+
             .section-title {
                 font-size: 2rem;
             }
-            
+
             .section-bg-text {
                 font-size: 4rem;
                 top: -30px;
             }
-            
+
             .mega-title {
                 font-size: 2.5rem;
             }
-            
+
             .mega-line {
                 width: 150px;
                 height: 4px;
             }
-            
+
             .floating-icon {
                 font-size: 1.5rem;
             }
-            
+
             .hero-stats {
                 flex-direction: column;
                 gap: 1rem;
             }
-            
+
             .floating-card {
                 padding: 1rem;
             }
-            
+
             .hero-avatar {
                 width: 150px;
                 height: 150px;
             }
-            
+
             .tech-icons {
                 position: static;
                 justify-content: center;
                 margin-top: 1rem;
             }
-            
+
             .tech-icons i {
                 font-size: 1.5rem;
             }
         }
     </style>
 </head>
+
 <body class="dark-theme" id="body">
+    <!-- Theme Toolbar: Dark/Light toggle + Custom Theme Color -->
+    <div class="theme-toolbar" id="themeToolbar" aria-label="Theme controls" style="pointer-events:auto;">
+        <button id="themeToggleBtn" class="theme-btn" title="Toggle Dark/Light" aria-label="Toggle Dark/Light">
+            <i class="fas fa-moon"></i>
+        </button>
+        <div class="color-swatches" aria-label="Pick accent color">
+            <button class="swatch" data-color="#00d4ff" style="--swatch:#00d4ff" title="Cyan"></button>
+            <button class="swatch" data-color="#ff4d4f" style="--swatch:#ff4d4f" title="Red"></button>
+            <button class="swatch" data-color="#22c55e" style="--swatch:#22c55e" title="Green"></button>
+            <button class="swatch" data-color="#a855f7" style="--swatch:#a855f7" title="Purple"></button>
+            <input type="color" id="customColorPicker" class="color-picker" aria-label="Custom color" title="Custom color" />
+        </div>
+    </div>
     <!-- Theme Toggle Button -->
     <div class="theme-toggle">
         <button id="themeToggle" class="btn btn-outline-primary">
@@ -1153,11 +1317,11 @@
                 <span class="brand-text">BOOKBIG</span>
                 <!-- <span class="brand-subtitle">INKHAM</span> -->
             </a>
-            
+
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            
+
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
@@ -1228,11 +1392,12 @@
                         <div class="floating-card">
                             <img src="./assets/images/my-avatar1 2.JPG" alt="Yanaphat Inkham" class="hero-avatar">
                             <div class="profile-meta">
-                                <p class="meta-item meta-location"><span class="meta-label">Located :</span> Greater Manchester, England</p>
+                                <p class="meta-item meta-location"><span class="meta-label">Located :</span> Greater
+                                    Manchester, England</p>
                                 <p class="meta-item meta-language"><span class="meta-label">Language :</span>
                                     <span class="flag" aria-label="English" title="English">🇬🇧</span>
-                                    <span class="flag" aria-label="Spanish" title="Spanish">🇪🇸</span>
                                     <span class="flag" aria-label="Thai" title="Thai">🇹🇭</span>
+                                    <span class="flag" aria-label="Spanish" title="Spanish">🇪🇸</span>
                                 </p>
                             </div>
                             <div class="tech-icons">
@@ -1279,14 +1444,18 @@
                     <div class="about-content">
                         <h3 class="about-heading">Passionate Developer & Tech Enthusiast</h3>
                         <p class="about-text">
-                            I'm a creative developer from Chiang Mai, Thailand, specializing in web development and digital innovation. 
+                            I'm a creative developer from Chiang Mai, Thailand, specializing in web development and
+                            digital innovation.
                             With a passion for turning complex problems into elegant, user-friendly solutions.
                         </p>
                         <p class="about-text">
-                            💻 I build websites that not only work flawlessly but actually make people go "wow!" when they see them.<br>
-                            🎨 I blend functionality with stunning aesthetics so your site is both powerful and beautiful.<br>
+                            💻 I build websites that not only work flawlessly but actually make people go "wow!" when
+                            they see them.<br>
+                            🎨 I blend functionality with stunning aesthetics so your site is both powerful and
+                            beautiful.<br>
                             ✨ I add that personal touch that makes your brand feel alive and authentic.<br>
-                            🚀 I've collaborated with amazing brands and I'm always excited to help new ideas take flight!
+                            🚀 I've collaborated with amazing brands and I'm always excited to help new ideas take
+                            flight!
                         </p>
                         <div class="about-features">
                             <div class="feature-item">
@@ -1302,7 +1471,7 @@
                                 <span>Mobile App Developer</span>
                             </div>
                         </div>
-                        
+
                         <!-- Education Timeline -->
                         <div class="education-timeline">
                             <h4 class="timeline-title">
@@ -1325,7 +1494,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                
+
                                 <div class="timeline-item" data-aos="fade-left">
                                     <div class="timeline-marker">
                                         <i class="fas fa-school"></i>
@@ -1341,7 +1510,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                
+
                                 <div class="timeline-item" data-aos="fade-right">
                                     <div class="timeline-marker">
                                         <i class="fas fa-graduation-cap"></i>
@@ -1357,7 +1526,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                
+
                                 <div class="timeline-item" data-aos="fade-left">
                                     <div class="timeline-marker">
                                         <i class="fas fa-child"></i>
@@ -1424,7 +1593,8 @@
                     <div class="skills-content">
                         <h3 class="skills-heading">Technical Expertise</h3>
                         <p class="skills-text">
-                            I've mastered a wide range of technologies and frameworks to deliver exceptional digital solutions.
+                            I've mastered a wide range of technologies and frameworks to deliver exceptional digital
+                            solutions.
                         </p>
                         <div class="skill-categories">
                             <div class="skill-category">
@@ -1716,7 +1886,8 @@
                     <div class="contact-info">
                         <h3 class="contact-heading">Let's Connect</h3>
                         <p class="contact-text">
-                            I'm always open to discussing new projects, creative ideas, or opportunities to be part of your visions.
+                            I'm always open to discussing new projects, creative ideas, or opportunities to be part of
+                            your visions.
                         </p>
                         <div class="contact-details">
                             <div class="contact-item">
@@ -1820,12 +1991,12 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="./assets/js/script.js"></script>
-    
+
     <!-- Inline JavaScript for immediate functionality -->
     <script>
         // Wait for DOM to load
-        document.addEventListener('DOMContentLoaded', function() {
-            
+        document.addEventListener('DOMContentLoaded', function () {
+
             // Initialize AOS (Animate On Scroll)
             if (typeof AOS !== 'undefined') {
                 AOS.init({
@@ -1850,33 +2021,33 @@
         function initThemeToggle() {
             const themeToggle = document.getElementById('themeToggle');
             const body = document.getElementById('body');
-            
+
             if (themeToggle && body) {
                 // Check for saved theme preference or default to dark
                 const currentTheme = localStorage.getItem('theme') || 'dark';
                 body.setAttribute('data-theme', currentTheme);
                 updateThemeIcon(currentTheme);
-                
-                themeToggle.addEventListener('click', function() {
+
+                themeToggle.addEventListener('click', function () {
                     const currentTheme = body.getAttribute('data-theme');
                     const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
-                    
+
                     body.setAttribute('data-theme', newTheme);
                     localStorage.setItem('theme', newTheme);
                     updateThemeIcon(newTheme);
-                    
+
                     // Add smooth transition
                     body.style.transition = 'all 0.5s ease';
                     setTimeout(() => {
                         body.style.transition = '';
                     }, 500);
-                    
+
                     // Update background elements for light theme
                     updateBackgroundForTheme(newTheme);
                 });
             }
         }
-        
+
         // Update background elements for theme
         function updateBackgroundForTheme(theme) {
             const animatedBg = document.querySelector('.animated-bg');
@@ -1886,6 +2057,89 @@
                 } else {
                     animatedBg.style.opacity = '1';
                 }
+
+  // Theme toolbar logic
+  function initThemeToolbar() {
+      const bodyEl = document.getElementById('body');
+      const toggleBtn = document.getElementById('themeToggleBtn');
+      const swatches = document.querySelectorAll('.theme-toolbar .swatch');
+      const colorPicker = document.getElementById('customColorPicker');
+
+      if (!bodyEl || !toggleBtn) return;
+
+      // Load saved settings
+      const savedTheme = localStorage.getItem('theme') || 'dark';
+      const savedAccent = localStorage.getItem('accent') || getComputedStyle(document.documentElement).getPropertyValue('--primary-blue').trim() || '#00d4ff';
+      bodyEl.setAttribute('data-theme', savedTheme);
+      setAccentColor(savedAccent);
+      updateThemeToolbarIcon(toggleBtn, savedTheme);
+      markActiveSwatch(savedAccent);
+
+      toggleBtn.addEventListener('click', () => {
+          const current = bodyEl.getAttribute('data-theme') || 'dark';
+          const next = current === 'dark' ? 'light' : 'dark';
+          bodyEl.setAttribute('data-theme', next);
+          localStorage.setItem('theme', next);
+          updateThemeToolbarIcon(toggleBtn, next);
+          updateBackgroundForTheme(next);
+      });
+
+      swatches.forEach(swatch => {
+          swatch.addEventListener('click', () => {
+              const color = swatch.getAttribute('data-color');
+              setAccentColor(color);
+              localStorage.setItem('accent', color);
+              markActiveSwatch(color);
+          });
+      });
+
+      if (colorPicker) {
+          colorPicker.addEventListener('input', (e) => {
+              const color = e.target.value;
+              setAccentColor(color);
+              localStorage.setItem('accent', color);
+              markActiveSwatch(undefined);
+          });
+      }
+  }
+
+  function updateThemeToolbarIcon(btn, theme) {
+      btn.innerHTML = theme === 'dark' ? '<i class="fas fa-moon"></i>' : '<i class="fas fa-sun"></i>';
+  }
+
+  function setAccentColor(color) {
+      const root = document.documentElement;
+      root.style.setProperty('--primary-blue', color);
+      // Derive secondary hues for consistency
+      try {
+          const secondary = shadeColor(color, -15);
+          const accent = shadeColor(color, -30);
+          root.style.setProperty('--secondary-blue', secondary);
+          root.style.setProperty('--accent-blue', accent);
+      } catch (_) {}
+  }
+
+  function markActiveSwatch(color) {
+      const swatches = document.querySelectorAll('.theme-toolbar .swatch');
+      swatches.forEach(s => s.classList.remove('active'));
+      if (!color) return;
+      const found = Array.from(swatches).find(s => s.getAttribute('data-color')?.toLowerCase() === color.toLowerCase());
+      if (found) found.classList.add('active');
+  }
+
+  // Utility: lighten/darken hex color by percent
+  function shadeColor(hex, percent) {
+      let c = hex.replace('#', '');
+      if (c.length === 3) c = c.split('').map(ch => ch+ch).join('');
+      const num = parseInt(c, 16);
+      let r = (num >> 16) & 0xff;
+      let g = (num >> 8) & 0xff;
+      let b = num & 0xff;
+      r = Math.min(255, Math.max(0, Math.round(r + (255 * (percent/100)))));
+      g = Math.min(255, Math.max(0, Math.round(g + (255 * (percent/100)))));
+      b = Math.min(255, Math.max(0, Math.round(b + (255 * (percent/100)))));
+      return '#' + ((1 << 24) + (r << 16) + (g << 8) + b).toString(16).slice(1);
+  }
             }
         }
 
@@ -1906,9 +2160,9 @@
         function initNavigation() {
             const navbar = document.querySelector('.navbar');
             const navLinks = document.querySelectorAll('.nav-link');
-            
+
             // Navbar scroll effect
-            window.addEventListener('scroll', function() {
+            window.addEventListener('scroll', function () {
                 if (navbar) {
                     if (window.scrollY > 100) {
                         navbar.classList.add('scrolled');
@@ -1917,22 +2171,22 @@
                     }
                 }
             });
-            
+
             // Active navigation link
             navLinks.forEach(link => {
-                link.addEventListener('click', function(e) {
+                link.addEventListener('click', function (e) {
                     navLinks.forEach(l => l.classList.remove('active'));
                     this.classList.add('active');
                 });
             });
-            
+
             // Smooth scrolling for navigation links
             navLinks.forEach(link => {
-                link.addEventListener('click', function(e) {
+                link.addEventListener('click', function (e) {
                     e.preventDefault();
                     const targetId = this.getAttribute('href');
                     const targetSection = document.querySelector(targetId);
-                    
+
                     if (targetSection) {
                         targetSection.scrollIntoView({
                             behavior: 'smooth',
@@ -1947,19 +2201,19 @@
         function initPortfolioFilter() {
             const filterBtns = document.querySelectorAll('.filter-btn');
             const portfolioItems = document.querySelectorAll('[data-category]');
-            
+
             filterBtns.forEach(btn => {
-                btn.addEventListener('click', function() {
+                btn.addEventListener('click', function () {
                     const filter = this.getAttribute('data-filter');
-                    
+
                     // Update active button
                     filterBtns.forEach(b => b.classList.remove('active'));
                     this.classList.add('active');
-                    
+
                     // Filter portfolio items
                     portfolioItems.forEach(item => {
                         const category = item.getAttribute('data-category');
-                        
+
                         if (filter === 'all' || category === filter) {
                             item.style.display = 'block';
                             item.style.animation = 'fadeInUp 0.6s ease forwards';
@@ -1974,30 +2228,30 @@
         // Contact Form Function
         function initContactForm() {
             const contactForm = document.getElementById('contactForm');
-            
+
             if (contactForm) {
-                contactForm.addEventListener('submit', function(e) {
+                contactForm.addEventListener('submit', function (e) {
                     e.preventDefault();
-                    
+
                     // Get form data
                     const name = this.querySelector('input[type="text"]').value;
                     const email = this.querySelector('input[type="email"]').value;
                     const subject = this.querySelectorAll('input[type="text"]')[1].value;
                     const message = this.querySelector('textarea').value;
-                    
+
                     // Simple validation
                     if (!name || !email || !subject || !message) {
                         alert('Please fill in all fields');
                         return;
                     }
-                    
+
                     // Simulate form submission
                     const submitBtn = this.querySelector('button[type="submit"]');
                     const originalText = submitBtn.innerHTML;
-                    
+
                     submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Sending...';
                     submitBtn.disabled = true;
-                    
+
                     setTimeout(() => {
                         alert('Message sent successfully!');
                         this.reset();
@@ -2011,17 +2265,17 @@
         // Back to Top Function
         function initBackToTop() {
             const backToTopBtn = document.getElementById('backToTop');
-            
+
             if (backToTopBtn) {
-                window.addEventListener('scroll', function() {
+                window.addEventListener('scroll', function () {
                     if (window.scrollY > 300) {
                         backToTopBtn.classList.add('show');
                     } else {
                         backToTopBtn.classList.remove('show');
                     }
                 });
-                
-                backToTopBtn.addEventListener('click', function() {
+
+                backToTopBtn.addEventListener('click', function () {
                     window.scrollTo({
                         top: 0,
                         behavior: 'smooth'
@@ -2033,13 +2287,13 @@
         // Counter Animation Function
         function initCounterAnimation() {
             const counters = document.querySelectorAll('.stat-number');
-            
+
             const animateCounter = (counter) => {
                 const target = parseInt(counter.getAttribute('data-count'));
                 const duration = 2000; // 2 seconds
                 const step = target / (duration / 16); // 60fps
                 let current = 0;
-                
+
                 const timer = setInterval(() => {
                     current += step;
                     if (current >= target) {
@@ -2049,7 +2303,7 @@
                     counter.textContent = Math.floor(current);
                 }, 16);
             };
-            
+
             // Intersection Observer for counter animation
             if ('IntersectionObserver' in window) {
                 const observer = new IntersectionObserver((entries) => {
@@ -2060,7 +2314,7 @@
                         }
                     });
                 }, { threshold: 0.5 });
-                
+
                 counters.forEach(counter => observer.observe(counter));
             }
         }
@@ -2068,16 +2322,16 @@
         // Smooth Scrolling Function
         function initSmoothScrolling() {
             const links = document.querySelectorAll('a[href^="#"]');
-            
+
             links.forEach(link => {
-                link.addEventListener('click', function(e) {
+                link.addEventListener('click', function (e) {
                     e.preventDefault();
                     const targetId = this.getAttribute('href');
                     const targetSection = document.querySelector(targetId);
-                    
+
                     if (targetSection) {
                         const offsetTop = targetSection.offsetTop - 80; // Account for fixed navbar
-                        
+
                         window.scrollTo({
                             top: offsetTop,
                             behavior: 'smooth'
@@ -2102,7 +2356,7 @@
             }
         `;
         document.head.appendChild(style);
-        
+
         // Typing Effect for Hero Title
         function initTypingEffect() {
             const typingText = document.querySelector('.typing-text');
@@ -2110,7 +2364,7 @@
                 const text = typingText.textContent;
                 typingText.textContent = '';
                 typingText.style.width = '0';
-                
+
                 let i = 0;
                 const typeWriter = () => {
                     if (i < text.length) {
@@ -2120,66 +2374,69 @@
                         setTimeout(typeWriter, 100);
                     }
                 };
-                
+
                 // Start typing effect after a delay
                 setTimeout(typeWriter, 1000);
             }
         }
-        
-        // Initialize typing effect
+
+    // Initialize typing effect
         initTypingEffect();
-        
+
         // Initialize mega title effects
         initMegaTitleEffects();
-        
-        // Mega Title Effects Function
+
+    // Theme controls: dark/light toggle + custom accent color
+    initThemeToolbar();
+
+    // Mega Title Effects Function
         function initMegaTitleEffects() {
             const titleChars = document.querySelectorAll('.title-char');
-            
+
             // Add click effects to title characters
             titleChars.forEach((char, index) => {
-                char.addEventListener('click', function() {
+                char.addEventListener('click', function () {
                     // Create explosion effect
                     createExplosionEffect(this);
-                    
+
                     // Add bounce animation
                     this.style.animation = 'none';
                     this.offsetHeight; // Trigger reflow
                     this.style.animation = 'char-bounce 0.6s ease';
-                    
+
                     // Reset animation after bounce
                     setTimeout(() => {
                         this.style.animation = 'char-float 3s ease-in-out infinite';
                     }, 600);
                 });
-                
+
                 // Add stagger animation on page load
                 setTimeout(() => {
                     char.style.animation = 'char-float 3s ease-in-out infinite';
                     char.style.animationDelay = `${index * 0.1}s`;
                 }, 1000 + (index * 100));
             });
-            
+
             // Add parallax effect to floating icons
             const floatingIcons = document.querySelectorAll('.floating-icon');
             floatingIcons.forEach(icon => {
                 const speed = parseFloat(icon.getAttribute('data-speed')) || 1;
-                
+
                 window.addEventListener('mousemove', (e) => {
                     const x = (e.clientX / window.innerWidth - 0.5) * speed * 20;
                     const y = (e.clientY / window.innerHeight - 0.5) * speed * 20;
-                    
+
                     icon.style.transform = `translate(${x}px, ${y}px)`;
                 });
             });
         }
-        
+
         // Create explosion effect
         function createExplosionEffect(element) {
             const rect = element.getBoundingClientRect();
             const centerX = rect.left + rect.width / 2;
             const centerY = rect.top + rect.height / 2;
-            
+
             // Create particles
             for (let i = 0; i < 8; i++) {
                 const particle = document.createElement('div');
@@ -2195,37 +2452,37 @@
                     pointer-events: none;
                     z-index: 10000;
                 `;
-                
+
                 document.body.appendChild(particle);
-                
+
                 // Animate particle
                 const angle = (i / 8) * Math.PI * 2;
                 const velocity = 100 + Math.random() * 50;
                 const vx = Math.cos(angle) * velocity;
                 const vy = Math.sin(angle) * velocity;
-                
+
                 let opacity = 1;
                 let scale = 1;
-                
+
                 const animateParticle = () => {
                     opacity -= 0.02;
                     scale -= 0.01;
-                    
+
                     if (opacity <= 0) {
                         particle.remove();
                         return;
                     }
-                    
+
                     particle.style.transform = `translate(${vx * (1 - opacity)}px, ${vy * (1 - opacity)}px) scale(${scale})`;
                     particle.style.opacity = opacity;
-                    
+
                     requestAnimationFrame(animateParticle);
                 };
-                
+
                 animateParticle();
             }
         }
-        
+
         // Add CSS for explosion effect
         const explosionStyle = document.createElement('style');
         explosionStyle.textContent = `
@@ -2238,4 +2495,5 @@
         document.head.appendChild(explosionStyle);
     </script>
 </body>
+
 </html>
