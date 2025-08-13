@@ -9,16 +9,16 @@ Web developer
 Show Contacts
 
 Email
-richard@example.com
+yanapatinkham@gmail.com
 
 Phone
-+1 (213) 352-2795
++66 90-317-4670
 
 Birthday
-June 23, 1982
+April 26, 2005
 
 Location
-Sacramento, California, USA
+Greater Manchester, England
 
 # navbar
 
@@ -32,9 +32,13 @@ Contact
 
 About me
 
-I'm Creative Director and UI/UX Designer from Sydney, Australia, working in web development and print media. I enjoy turning complex problems into simple, beautiful and intuitive designs.
+I'm Creative Director and UI/UX Designer from Chiang Mai, Thailand, working in web development and print media. I enjoy turning complex problems into simple, beautiful and intuitive designs.
 
-My job is to build your website so that it is functional and user-friendly but at the same time attractive. Moreover, I add personal touch to your product and make sure that is eye-catching and easy to use. My aim is to bring across your message and identity in the most creative way. I created web design for many famous brand companies.
+
+💻 I build websites that not only work but actually make people go “ooooh!” when they see them.
+🎨 I mix functionality with style so your site is both easy to use and nice to look at — like a comfy chair that also looks amazing in photos.
+✨ I add a personal touch so your brand feels alive, not like a boring template.
+🚀 I’ve worked with big-name brands, but I’m just as excited to help fresh ideas take off!
 
 
 ## service
